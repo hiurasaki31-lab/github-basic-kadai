@@ -1,4 +1,4 @@
-body.h1 p {
+body, h1, p {
   margin: 0;
 }
 .p{
@@ -39,7 +39,7 @@ main{
   content: "●";
    color: rgb(239, 111, 139);
 }
-.contents p:nth-child(3)::first-letter{
+.contents p:nth-of-type(2)::first-letter{
    font-weight: bold;
    color: rgb(97, 206, 249);
 }
@@ -69,6 +69,7 @@ footer a:hover{
       font-size: 25px;
     }
     #parent{
-      display: block;
+      display: flex; 
+      flex-direction: column;
     }
 }
